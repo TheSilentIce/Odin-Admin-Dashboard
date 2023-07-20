@@ -163,8 +163,8 @@ ul {
 }
 
 #mini-profile {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
 }
 
@@ -176,13 +176,13 @@ ul {
     display: grid;
     background-color: #e2e8f0;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 4fr 3fr;
 }
 
 /* Projects */
 .project-container {
     display: grid;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     grid-column: span 1;
     grid-row: 1 / span 2;
     align-items: center;
@@ -226,7 +226,7 @@ ul {
 }
 
 .announcements {
-    background-color: magenta;
+    background-color: white;
     display: grid;
     grid-row: span 2;
     grid-template-rows: repeat(3,1fr);
@@ -234,10 +234,41 @@ ul {
     margin: 5%;
 }
 
+.line {
+    background-color: #6b6b6b;
+    opacity: 0.25;
+    width: 1fr;
+    height: 2px;
+}
+
 /* Trending */
 .trending-container {
     display: grid;
-    background-color: violet;
+    /* background-color: violet; */
     grid-row: 2;
     grid-column: 2;
+    grid-template-rows: 1rem 1fr;
+}
+
+.trending {
+    background-color: white;
+    display: grid;
+    grid-row: span 2;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10%;
+    margin: 5%;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.trending-profile {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
 }
